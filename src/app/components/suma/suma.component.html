@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Calculadora</h1>
+    <div id="appcalculadora">
+            <p>{{valorInicial}}</p>
+            <div class="ingresarDatos">
+                <label for="">Primer número:</label>
+                <input type="text" [(ngModel)]="numeroUno" name="numeroUno">
+                <br>
+                <label for="">Segundo número:</label>
+                <input type="text" [(ngModel)]="numeroDos" name="numeroDos">
+            </div>
+            <div class="botones">
+                <button class="boton" type="button" (click)="operacion('+')">+</button>
+                <button class="boton" type="button" (click)="operacion('-')">-</button>
+                <button class="boton" type="button" (click)="operacion('*')">*</button>
+                <button class="boton" type="button" (click)="operacion('/')">/</button>
+            </div>
+    </div>
+</div>
